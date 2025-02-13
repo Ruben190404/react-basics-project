@@ -16,7 +16,7 @@ export const Tag = React.forwardRef(function Tag(props, ref) {
       {startElement && (
         <ChakraTag.StartElement>{startElement}</ChakraTag.StartElement>
       )}
-      <ChakraTag.Label>{children}</ChakraTag.Label>
+      <ChakraTag.Label fontSize={'clamp(5px, 5vw, 12px)'}>{children}</ChakraTag.Label>
       {endElement && <ChakraTag.EndElement>{endElement}</ChakraTag.EndElement>}
       {closable && (
         <ChakraTag.EndElement>

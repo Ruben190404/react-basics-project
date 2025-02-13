@@ -4,10 +4,10 @@ import { Tag } from '../components/ui/tag.jsx';
 export const RecipePage = ({recipe, clickFn}) => {
     //recipe = recipe.recipe;
     return(
-        <Center height={'100vh'} gap={4} backgroundColor={'gray.100'}>
-            <Card.Root width={'1000px'} overflow={'hidden'} height={'95vh'} borderRadius={'20px'} boxShadow={'lg'} margin={'0 1rem'}>
+        <Center minH={'100vh'} gap={4} backgroundColor={'gray.100'}>
+            <Card.Root width={'1000px'} overflow={'hidden'} minH={'95vh'} borderRadius={'20px'} boxShadow={'lg'} margin={'1rem'}>
                 <Image src={recipe.image} height={'300px'}/>
-                <Card.Body gap={2} overflow={'auto'}>
+                <Card.Body gap={2}>
                     <Flex flexDirection={'column'}  gap={'1rem'} md={{ flexDirection: 'row', gap: '0rem' }}>
                         <Box width={'50%'} spaceY={'1rem'}>
                             <Box>

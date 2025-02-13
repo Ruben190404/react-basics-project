@@ -22,7 +22,7 @@ export const RecipeListPage = ({clickFn}) => {
   return (
     <Center flexDir="column" gap={'40px'} alignContent={'center'} backgroundColor={'gray.100'}>
       <Heading>Your Recipe App</Heading>
-      <Input placeholder='Look up a recipe...' maxW={'400px'} width={'95vw'} onInput={handleInput}/>
+      <Input placeholder='Look up a recipe...' maxW={'400px'} width={'95vw'} backgroundColor={'white'} onInput={handleInput}/>
         <Flex direction={'row'} wrap={'wrap'} maxW={'1340px'} gap={'20px'} margin={'0 1rem'} justifyContent={'center'}>
         <For each={!searchResults.length > 0 ? data.hits : searchResults}>
             {(item, index) => (
